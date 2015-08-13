@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Preference</title>
+
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/simple-sidebar.css">
+	<script> window.jQuery = window.$ = require('./jquery-2.1.4.min'); </script>
+	<script src="./js/bootstrap.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a>Preference</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+            </ul>
+        </div>
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+
+						<h2>Shortcuts</h2>
+						<table class="table table-bordered">
+							<tr class="active">
+								<th>Operation</th>
+								<th>Key</th>
+							</tr>
+							<tr>
+								<td>Open window</td>
+								<!-- <td><input class="form-control" type="text" value="ctrl+t"></td> -->
+								<td>F2</td>
+							</tr>
+							<tr>
+								<td>Hide window</td>
+								<td>Esc</td>
+							</tr>
+							<tr>
+								<td>Swap language</td>
+								<!-- <td><input class="form-control" type="text" value="ctrl+r"></td> -->
+								<td>BindKey + s</td>
+							</tr>
+							<tr>
+								<td>Paste from clipboard</td>
+								<!-- <td><input class="form-control" type="text" value="ctrl+r"></td> -->
+								<td>BindKey + p</td>
+							</tr>
+							<tr>
+								<td>Delete inputs</td>
+								<!-- <td><input class="form-control" type="text" value="ctrl+r"></td> -->
+								<td>BindKey + d</td>
+							</tr>
+							<tr>
+								<td>If...</td>
+								<!-- <td><input class="form-control" type="text" value="ctrl+r"></td> -->
+								<td>BindKey + i</td>
+							</tr>
+						</table>
+						<div>BindKey: Mac=⌘, Other=Ctrl</div>
+<!--
+ 						<div><a id="openAccelerator" href="#">Accelerator</a></div>
+						<div class="pull-right"><button type="button" class="btn btn-primary">Save</button></div>
+ -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+	
+	
+
+	<script>
+		var shell = require('shell');
+
+		$("#openAccelerator").click(function(){
+			shell.openExternal('https://github.com/atom/electron/blob/master/docs/api/accelerator.md');
+		})
+
+	</script>
+</body>
+</html>
