@@ -1,7 +1,9 @@
 # Quick Translator
 
-## How to Use
+## Download Application
+https://github.com/disc99/quick-translator/releases
 
+## How to Use
 | Operation | Key |
 |:-----------|:------------|
 |Open window        |F2        |
